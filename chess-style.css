@@ -1,0 +1,29 @@
+.board {
+    /*display: flex;*/
+    /*flex-flow: column;*/
+}
+
+.row {
+    /*flex: 1;*/
+    /*display: flex;*/
+}
+
+.odd > .even, .even > .odd {
+    background-color: gray;
+}
+
+.cell {
+    /*flex: 1;*/
+    border: 1px solid black;
+    height: 80px;
+    width: 80px;
+    display: table-cell;
+}
+
+.pawn {
+    height: 70%;
+    width: 80%;
+    background-color: red;
+    border-radius: 100%;
+    margin: 10%;
+}
