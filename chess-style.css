@@ -1,6 +1,7 @@
 .board {
     /*display: flex;*/
     /*flex-flow: column;*/
+    display: inline-block;
 }
 
 .row {
@@ -20,10 +21,43 @@
     display: table-cell;
 }
 
-.pawn {
+.red-pawn {
     height: 70%;
     width: 80%;
     background-color: red;
+    border: 2px solid red;
+    box-sizing: border-box;
     border-radius: 100%;
     margin: 10%;
+}
+
+.white-pawn {
+    height: 70%;
+    width: 80%;
+    background-color: #ffffff;
+    border: 2px solid red;
+    box-sizing: border-box;
+    border-radius: 100%;
+    margin: 10%;
+}
+
+.dead-pawns {
+    border: 1px solid black;
+    display: inline-block;
+    width: 230px;
+    height: 650px;
+}
+
+#white-dead {
+    width: auto;
+    border: 1px solid green;
+    height: 47%;
+    margin: 10px;
+}
+
+#red-dead {
+    width: auto;
+    border: 1px solid #F44336;
+    height: 47%;
+    margin: 10px;
 }
