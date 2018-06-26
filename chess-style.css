@@ -22,23 +22,23 @@
 }
 
 .red-pawn {
-    height: 70%;
-    width: 80%;
+    height: 50px;
+    width: 50px;
     background-color: red;
     border: 2px solid red;
     box-sizing: border-box;
     border-radius: 100%;
-    margin: 10%;
+    margin: 10px;
 }
 
 .white-pawn {
-    height: 70%;
-    width: 80%;
+    height: 50px;
+    width: 50px;
     background-color: #ffffff;
     border: 2px solid red;
     box-sizing: border-box;
     border-radius: 100%;
-    margin: 10%;
+    margin: 10px;
 }
 
 .dead-pawns {

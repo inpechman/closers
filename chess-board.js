@@ -129,10 +129,11 @@ function pawnClick(player, backword) {
                         continue
                     }
                     nextCell.style.background = "rgba(255,99,71,0.5)";
-                    nextCell.onclick = function (position) {
+                    nextCell.onclick = function (position, cellChild) {
                         return function () {
                             this.appendChild(pawn);
-                            document.getElementById(otherOpp + "-dead").appendChild(cellChild);
+                            var deadArea = document.getElementById(otherOpp + "-dead");
+                            deadArea.appendChild(cellChild);
                             console.log(cp);
 
                             cp[0] = position[0];
@@ -145,7 +146,7 @@ function pawnClick(player, backword) {
                             resetOptionalCells();
                             changePlayer();
                         }
-                    }(nextPos);
+                    }(nextPos, cellChild);
                     optionalCells.push(nextCell);
                     continue;
 
